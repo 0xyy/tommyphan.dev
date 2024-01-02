@@ -5,6 +5,7 @@ import hero from "./hero.json";
 import navbar from "./navbar.json";
 import projects from "./projects.json";
 import tech from "./tech.json";
+import theme from "./theme.json";
 
 export const en = {
 	navbar,
@@ -14,4 +15,5 @@ export const en = {
 	tech,
 	projects,
 	contact,
+	theme,
 };

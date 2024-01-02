@@ -1,5 +1,6 @@
 import { type ReactNode, createContext, useContext, useEffect } from "react";
 import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 import { useLocalStorageState } from "../hooks/useLocalStorageState";
 
@@ -22,6 +23,7 @@ const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
 		window.matchMedia("(prefers-color-scheme: dark)").matches,
 		"isDarkMode",
 	);
+	const { t } = useTranslation("theme");
 
 	useEffect(() => {
 		if (isDarkMode) {
@@ -36,7 +38,7 @@ const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
 
 		toast.dismiss();
 
-		toast(!isDarkMode ? "Hello Darkness!" : "Hello Sunshine!", {
+		toast(!isDarkMode ? t("dark-mode") : t("light-mode"), {
 			icon: !isDarkMode ? "🌙" : "☀️",
 			duration: 1000,
 		});
