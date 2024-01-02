@@ -14,21 +14,16 @@ type TechCardProps = {
 const TechCard = ({ name, icon, index }: TechCardProps) => {
 	const cardStyle = "w-[160px] sm:w-[180px] md:w-[250px]";
 	const content = (
-		<motion.div
-			variants={fadeIn("down", "spring", 0.1 * index, 0.75)}
-			className="bg-secondary-b w-full rounded-2xl p-1 shadow-md"
-		>
-			<div className="flex min-h-[160px] flex-col items-center justify-evenly px-12 py-5 sm:min-h-[180px]">
-				<img
-					src={icon}
-					alt={name}
-					className="h-[45px] w-[45px] object-contain sm:h-[65px] sm:w-[65px]"
-				/>
-				<h3 className="text-full-blue-gradient text-center text-sm font-bold sm:text-lg md:text-xl">
-					{name}
-				</h3>
-			</div>
-		</motion.div>
+		<div className="flex min-h-[160px] flex-col items-center justify-evenly px-12 py-5 sm:min-h-[180px]">
+			<img
+				src={icon}
+				alt={name}
+				className="h-[45px] w-[45px] object-contain sm:h-[65px] sm:w-[65px]"
+			/>
+			<h3 className="text-full-blue-gradient text-center text-sm font-bold sm:text-lg md:text-xl">
+				{name}
+			</h3>
+		</div>
 	);
 
 	return (
@@ -40,9 +35,17 @@ const TechCard = ({ name, icon, index }: TechCardProps) => {
 				tiltMaxAngleX={23}
 				tiltMaxAngleY={23}
 			>
-				{content}
+				<motion.div
+					variants={fadeIn("down", "spring", 0.1 * index, 0.75)}
+					className="bg-secondary-b w-full rounded-2xl p-1 shadow-md"
+				>
+					{content}
+				</motion.div>
 			</Tilt>
-			<div className={clsx(cardStyle, "block md:hidden")}>{content}</div>
+
+			<div className={clsx(cardStyle, "bg-secondary-b w-full rounded-2xl p-1 shadow-md md:hidden")}>
+				{content}
+			</div>
 		</>
 	);
 };
