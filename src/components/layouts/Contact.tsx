@@ -103,7 +103,7 @@ const ContactSection = () => {
 							value={form.name}
 							onChange={changeHandler}
 							placeholder={t("name-placeholder")}
-							className="text-primary-t placeholder:text-secondary-t bg-secondary-b rounded-lg border-none px-6 py-4 font-medium shadow-md outline-none"
+							className="text-primary-t placeholder:text-secondary-t bg-secondary-b rounded-lg border-none px-3 py-4 font-medium shadow-md outline-none md:px-6"
 						/>
 					</label>
 					<label className="flex flex-col">
@@ -114,7 +114,7 @@ const ContactSection = () => {
 							value={form.email}
 							onChange={changeHandler}
 							placeholder={t("email-placeholder")}
-							className="text-primary-t placeholder:text-secondary-t bg-secondary-b rounded-lg border-none px-6 py-4 font-medium shadow-md outline-none"
+							className="text-primary-t placeholder:text-secondary-t bg-secondary-b rounded-lg border-none px-3 py-4 font-medium shadow-md outline-none md:px-6"
 						/>
 					</label>
 					<label className="flex flex-col">
@@ -125,7 +125,7 @@ const ContactSection = () => {
 							value={form.message}
 							onChange={changeHandler}
 							placeholder={t("message-placeholder")}
-							className="text-primary-t placeholder:text-secondary-t bg-secondary-b resize-none rounded-lg border-none px-6 py-4 font-medium shadow-md outline-none"
+							className="text-primary-t placeholder:text-secondary-t bg-secondary-b resize-none rounded-lg border-none px-3 py-4 font-medium shadow-md outline-none md:px-6"
 						/>
 					</label>
 

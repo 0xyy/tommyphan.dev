@@ -32,9 +32,11 @@ const ServiceCard = ({ title, icon, index }: ServiceCardProps) => {
 				variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
 				className="bg-secondary-b w-full rounded-2xl p-1 shadow-md"
 			>
-				<div className="flex min-h-[280px] flex-col items-center justify-evenly px-12 py-5">
-					<Icon size={40} className="text-primary-blue" />
-					<h3 className=" text-full-blue-gradient text-center text-xl font-bold">{title}</h3>
+				<div className="flex min-h-[140px] flex-col items-center justify-evenly px-12 py-5 sm:min-h-[280px]">
+					<Icon className="h-[30px] w-[30px] text-primary-blue sm:h-[40px] sm:w-[40px]" />
+					<h3 className="text-full-blue-gradient text-md text-center font-bold sm:text-lg md:text-xl">
+						{title}
+					</h3>
 				</div>
 			</motion.div>
 		</Tilt>
