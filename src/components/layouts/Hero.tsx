@@ -41,7 +41,7 @@ const Hero = () => {
 					</motion.div>
 					<motion.p
 						variants={fadeIn("", "", 0.3, 1)}
-						className="text-md mt-10 max-w-2xl md:mt-20 md:text-xl lg:max-w-lg"
+						className="text-md text-primary-t mt-10 max-w-2xl md:mt-20 md:text-xl lg:max-w-lg"
 					>
 						<span className="leading-10">{t("intro")}</span>
 						<span className="leaading-10 text-blue-gradient font-bold">{t("much-more")}</span>

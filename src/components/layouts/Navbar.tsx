@@ -23,10 +23,10 @@ const Navbar = () => {
 
 	const languageButton = (
 		<button
-			className="text-md font-bold transition-colors hover:text-accent-blue"
+			className="text-md text-primary-t font-bold hover:text-accent-blue"
 			onClick={changeLanguageHandler}
 		>
-			{currentLanguage === "en" ? "PL" : "EN"}
+			<span>{currentLanguage === "en" ? "PL" : "EN"}</span>
 		</button>
 	);
 
@@ -65,7 +65,7 @@ const Navbar = () => {
 							<li
 								className={clsx(
 									link === active ? "text-blue-gradient" : "text-primary-t",
-									"text-md cursor-pointer font-semibold transition-colors hover:text-accent-blue",
+									"text-md cursor-pointer font-semibold hover:text-accent-blue",
 								)}
 								key={link}
 								onClick={() => setActive(link)}

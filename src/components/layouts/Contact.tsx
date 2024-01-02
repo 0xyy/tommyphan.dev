@@ -73,7 +73,7 @@ const ContactSection = () => {
 				<h3 className={styles.sectionHeadText}>{t("title")}</h3>
 
 				<div className="flex w-full">
-					<p className="mt-3 max-w-3xl text-[17px] leading-[30px] text-secondary">
+					<p className="text-secondary-t mt-3 max-w-3xl text-[17px] leading-[30px]">
 						{t("description")}
 						<a
 							href="mailto:tommyphan2004.tp@gmail.com"
