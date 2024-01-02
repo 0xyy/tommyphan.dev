@@ -29,13 +29,18 @@ import layeredWaveHeroLight from "./waves/layered-wave-hero-light.svg";
 import layeredWaveHeroDark from "./waves/layered-waves-hero-dark.svg";
 import layeredWaveTopTechDark from "./waves/layered-waves-top-tech-dark.svg";
 import layeredWaveTopTechLight from "./waves/layered-waves-top-tech-light.svg";
+import layeredWaveTopTechSmallDark from "./waves/layered-waves-top-tech-small-dark.svg";
+import layeredWaveTopTechSmallLight from "./waves/layered-waves-top-tech-small-light.svg";
 import stackedWavesBottomAboutDark from "./waves/stacked-waves-bottom-about-dark.svg";
 import stackedWavesBottomAboutLight from "./waves/stacked-waves-bottom-about-light.svg";
-import test from "./waves/stacked-waves-haikei.svg";
+import stackedWavesBottomAboutSmallDark from "./waves/stacked-waves-bottom-about-small-dark.svg";
+import stackedWavesBottomAboutSmallLight from "./waves/stacked-waves-bottom-about-small-light.svg";
 import waveBottomProjectsDark from "./waves/wave-bottom-projects-dark.svg";
 import waveBottomProjectsLight from "./waves/wave-bottom-projects-light.svg";
 import waveTopAboutDark from "./waves/wave-top-about-dark.svg";
 import waveTopAboutLight from "./waves/wave-top-about-light.svg";
+import waveTopAboutSmallDark from "./waves/wave-top-about-small-dark.svg";
+import waveTopAboutSmallLight from "./waves/wave-top-about-small-light.svg";
 
 export {
 	blackCurveArrow,
@@ -74,5 +79,10 @@ export {
 	swiftShop,
 	anyCar,
 	mogoWebsite,
-	test,
+	stackedWavesBottomAboutSmallLight,
+	stackedWavesBottomAboutSmallDark,
+	waveTopAboutSmallLight,
+	waveTopAboutSmallDark,
+	layeredWaveTopTechSmallLight,
+	layeredWaveTopTechSmallDark,
 };

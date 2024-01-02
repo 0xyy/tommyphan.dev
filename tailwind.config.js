@@ -18,6 +18,7 @@ export default {
 			screens: {
 				xs: "450px",
 				"2xs": "561px",
+				"3xl": "2300px",
 			},
 			boxShadow: {
 				card: "0px 35px 120px -15px #211e35",

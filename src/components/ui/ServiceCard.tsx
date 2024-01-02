@@ -22,7 +22,7 @@ const ServiceCard = ({ title, icon, index }: ServiceCardProps) => {
 
 	return (
 		<Tilt
-			className="xs:w-[250px] w-full"
+			className="w-full sm:w-[230px] md:w-[250px]"
 			scale={1}
 			transitionSpeed={450}
 			tiltMaxAngleX={23}

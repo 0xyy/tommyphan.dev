@@ -6,9 +6,12 @@ import { useTranslation } from "react-i18next";
 import {
 	stackedWavesBottomAboutDark,
 	stackedWavesBottomAboutLight,
-	test,
+	stackedWavesBottomAboutSmallDark,
+	stackedWavesBottomAboutSmallLight,
 	waveTopAboutDark,
 	waveTopAboutLight,
+	waveTopAboutSmallDark,
+	waveTopAboutSmallLight,
 } from "../../assets";
 import { services } from "../../constants";
 import { useTheme } from "../../context/ThemeProvider";
@@ -47,17 +50,29 @@ const About = () => {
 	const { isDarkMode } = useTheme();
 	const isMobile = useMediaQuery("(max-width: 640px)");
 
-	const waveTopImage = isDarkMode ? waveTopAboutDark : waveTopAboutLight;
-	const waveBottomImage = isDarkMode ? stackedWavesBottomAboutDark : stackedWavesBottomAboutLight;
-	const bottomImage = isMobile ? test : waveBottomImage;
+	const waveTopImage = isMobile
+		? isDarkMode
+			? waveTopAboutSmallDark
+			: waveTopAboutSmallLight
+		: isDarkMode
+			? waveTopAboutDark
+			: waveTopAboutLight;
+
+	const waveBottomImage = isMobile
+		? isDarkMode
+			? stackedWavesBottomAboutSmallDark
+			: stackedWavesBottomAboutSmallLight
+		: isDarkMode
+			? stackedWavesBottomAboutDark
+			: stackedWavesBottomAboutLight;
 
 	const SectionWithBackground = SectionWrapper(
 		AboutSection,
 		"about",
 		undefined,
 		waveTopImage,
-		bottomImage,
-		"pt-28 md:pt-36 2xl:pt-[200px] pb-40 md:pb-96 2xl:pb-[450px]",
+		waveBottomImage,
+		"pt-[300px] xs:pt-[380px] md:pt-[400px] lg:pt-[450px] xl:pt-[550px] 2xl:pt-[650px] 3xl:pt-[950px] pb-40 md:pb-96 xl:pb-[550px] 2xl:pt-[650px] 3xl:pb-[850px]",
 	);
 	return <SectionWithBackground />;
 };

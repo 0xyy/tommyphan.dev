@@ -22,7 +22,7 @@ const Hero = () => {
 				viewport={{ once: true, amount: 0.25 }}
 				className={clsx(
 					styles.paddingX,
-					"mx-auto flex max-w-7xl flex-col justify-between gap-4 overflow-hidden pb-10 pt-20 md:pb-20 md:pt-40 lg:flex-row lg:gap-8 xl:pb-28 2xl:pb-72",
+					"mx-auto flex max-w-7xl flex-col justify-between gap-4 overflow-hidden pt-20  md:pt-40 lg:flex-row lg:gap-8 ",
 				)}
 			>
 				<div className="h-fit pr-10 lg:h-auto">
@@ -75,7 +75,6 @@ const Hero = () => {
 					</div>
 				</motion.div>
 			</motion.section>
-			{/* wave to do (think about it)*/}
 		</>
 	);
 };

@@ -19,7 +19,7 @@ const SectionWrapper =
 	() => {
 		return (
 			<div className={clsx(bg && bg, "relative z-0")}>
-				{waveTop && <img src={waveTop} alt="waves" className="absolute top-0 -z-20 h-fit w-full" />}
+				{waveTop && <img src={waveTop} alt="waves" className="absolute top-0 -z-20 w-full" />}
 				<motion.section
 					variants={staggerContainer()}
 					initial="hidden"
@@ -38,7 +38,7 @@ const SectionWrapper =
 					<Component />
 				</motion.section>
 				{waveBottom && (
-					<img src={waveBottom} alt="waves" className="absolute bottom-0 -z-20 h-fit w-full" />
+					<img src={waveBottom} alt="waves" className="absolute bottom-0 -z-20 w-full" />
 				)}
 			</div>
 		);
