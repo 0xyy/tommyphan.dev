@@ -1,0 +1,16 @@
+{
+	"subtitle": "Skontaktuj się ze mną",
+	"title": "Kontakt.",
+	"description": "Jestem wdzięczny za każdy kontakt lub wiadomość, którą możesz mi wysłać za pomocą mojego ",
+	"form-info": " lub formularza poniżej.",
+	"name": "Twoje Imię",
+	"name-placeholder": "Jak się nazywasz?",
+	"email": "Twój Email",
+	"email-placeholder": "Jaki masz adres email?",
+	"message": "Twoja Wiadomość",
+	"message-placeholder": "Jaką wiadomość chcesz przekazać?",
+	"submit": "Wyślij",
+	"submitting": "Wysyłanie...",
+	"form-success": "Twoja wiadomość została wysłana!\n Odezwę się wkrótce 😊",
+	"form-error": "Sorki coś poszło nie tak.\n Spróbuj ponownie poźniej 😭"
+}

@@ -1,0 +1,41 @@
+{
+	"subtitle": "Co udało mi się zrobić do tej pory",
+	"title": "Doświadczenie zawodowe.",
+	"promis": {
+		"date": "Październik 2020",
+		"city": "Kraków",
+		"points": [
+			"Tworzenie strony internetowej dla firmy przy użyciu HTML5, SASS i Adobe XD.",
+			"Wdrożenie responsywnego designu i zapewnienie kompatybilności z różnymi przeglądarkami."
+		]
+	},
+	"dpk-system": {
+		"date": "Październik 2020",
+		"city": "Kraków",
+		"points": [
+			"Tworzenie aplikacji internetowej z współprcownikiem przy użyciu React.js i ASP.NET.",
+			"Współpraca z zespołami wielofunkcyjnymi.",
+			"Moim zadaniem było napisanie aplikacji do rejestrowania czasu pracy pracowników i zbierania ich statystyk."
+		]
+	},
+	"it-focus": {
+		"date": "Listopad 2021",
+		"city": "Katowice",
+		"points": [
+			"Rozwijanie i utrzymywanie różnych komercyjnych projektów aplikacji internetowych.",
+			"Używając NestJS, Node.js all with TypeSscript."
+		]
+	},
+	"nebucode": {
+		"date": "Luty 2023 - Obecnie",
+		"city": "Warszawa",
+		"points": [
+			"Na początku moich obowiązków skupiałem się głównie na tworzeniu responsywnych interfejsów użytkownika w Angularze.",
+			"Następnie spędziłem większość czasu na rozwijaniu backendu przy użyciu NestJS z sequelize-typescript i PostgreSQL.",
+			"Zaangażowany w pisanie testów i testowanie różnych aplikacji.",
+			"Udział w procesie tworzenia dokumentacji projektowej.",
+			"Samodzielne tworzenie aplikacji za pomocą React.js i NestJS w celu zautomatyzowania powolnego ręcznego procesu tworzenia danych, który wykorzystuje zewnętrzne api openai i livechat.",
+			"Tworzenie i monitorowanie aplikacji internetowych w React.js"
+		]
+	}
+}

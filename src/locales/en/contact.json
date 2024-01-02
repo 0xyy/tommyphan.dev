@@ -1,0 +1,16 @@
+{
+	"subtitle": "Get in touch",
+	"title": "Contact.",
+	"description": "I am grateful for any contact or message that you can send me through my ",
+	"form-info": " or the form below.",
+	"name": "Your Name",
+	"name-placeholder": " What's your name?",
+	"email": "Your Email",
+	"email-placeholder": " What's your email?",
+	"message": "Your Message",
+	"message-placeholder": " What do you want to say?",
+	"submit": "Send",
+	"submitting": "Sending...",
+	"form-success": "Your message was sent!\n I will get back to you soon 😊",
+	"form-error": "Sorry, something went wrong.\n Try again later 😭"
+}

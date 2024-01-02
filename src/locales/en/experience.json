@@ -1,0 +1,41 @@
+{
+	"subtitle": "What I have done so far",
+	"title": "Work Experience.",
+	"promis": {
+		"date": "October 2020",
+		"city": "Cracow",
+		"points": [
+			"Developing a website for a company using HTML5, SASS and Adobe XD.",
+			"Implementing responsive design and ensuring cross-browser compatibility."
+		]
+	},
+	"dpk-system": {
+		"date": "October 2020",
+		"city": "Cracow",
+		"points": [
+			"Developing a web application with a colleague using React.js and ASP.NET.",
+			"Collaborating with cross-functional teams.",
+			"My responsibility was to write an application to record employees' working time and collect their statistics."
+		]
+	},
+	"it-focus": {
+		"date": "November 2021",
+		"city": "Katowice",
+		"points": [
+			"Developing and maintaining various commercial web application projects.",
+			"Using NestJS, Node.js all with TypeSscript."
+		]
+	},
+	"nebucode": {
+		"date": "February 2023 - Present",
+		"city": "Warsaw",
+		"points": [
+			"In the early days of my responsibilities, mainly focused on developing responsible user interfaces in the Angular.",
+			"Then spending most of time developing the backend using NestJS with sequelize-typescript and PostgreSQL.",
+			"Involved in writing tests and testing of various applications.",
+			"Participating in the process of creating project documentation.",
+			"Creating alone an application with React.js and NestJS to automate a slow manual process of creating data that uses external api openai and livechat",
+			"Developing and maintaining web applications in React.js"
+		]
+	}
+}
