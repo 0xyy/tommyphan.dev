@@ -12,14 +12,16 @@ const SectionWrapper =
 		Component: ComponentType,
 		idName: NavLink,
 		bg?: string,
-		wave1?: string,
-		wave2?: string,
+		waveTop?: string,
+		waveBottom?: string,
 		paddingY?: string,
 	): FC =>
 	() => {
 		return (
 			<div className={clsx(bg && bg, "relative z-0")}>
-				{wave1 && <img src={wave1} alt="waves" className="absolute top-0 -z-20 h-fit w-full" />}
+				{waveTop && (
+					<img src={waveTop} alt="waves" className="absolute top-0 -z-20 h-fit w-full bg-red-300" />
+				)}
 				<motion.section
 					variants={staggerContainer()}
 					initial="hidden"
@@ -37,7 +39,13 @@ const SectionWrapper =
 
 					<Component />
 				</motion.section>
-				{wave2 && <img src={wave2} alt="waves" className="absolute bottom-0 -z-20 h-fit w-full" />}
+				{waveBottom && (
+					<img
+						src={waveBottom}
+						alt="waves"
+						className="absolute bottom-0 -z-20 h-fit w-full bg-red-300"
+					/>
+				)}
 			</div>
 		);
 	};
