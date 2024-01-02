@@ -2,6 +2,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
 
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 import CanvasLoader from "../ui/CanvasLoader";
 
 const Shiba = ({ isMobile }: { isMobile: boolean }) => {
@@ -30,23 +31,7 @@ const Shiba = ({ isMobile }: { isMobile: boolean }) => {
 };
 
 const ShibaCanvas = () => {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const mediaQuery = window.matchMedia("(max-width: 1024px)");
-
-		setIsMobile(mediaQuery.matches);
-
-		const handleMediaQueryChange = (event: MediaQueryListEvent) => {
-			setIsMobile(event.matches);
-		};
-
-		mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-		return () => {
-			mediaQuery.removeEventListener("change", handleMediaQueryChange);
-		};
-	}, []);
+	const isMobile = useMediaQuery("(max-width: 1024px)");
 
 	return (
 		<Canvas

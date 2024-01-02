@@ -31,6 +31,7 @@ import layeredWaveTopTechDark from "./waves/layered-waves-top-tech-dark.svg";
 import layeredWaveTopTechLight from "./waves/layered-waves-top-tech-light.svg";
 import stackedWavesBottomAboutDark from "./waves/stacked-waves-bottom-about-dark.svg";
 import stackedWavesBottomAboutLight from "./waves/stacked-waves-bottom-about-light.svg";
+import test from "./waves/stacked-waves-haikei.svg";
 import waveBottomProjectsDark from "./waves/wave-bottom-projects-dark.svg";
 import waveBottomProjectsLight from "./waves/wave-bottom-projects-light.svg";
 import waveTopAboutDark from "./waves/wave-top-about-dark.svg";
@@ -73,4 +74,5 @@ export {
 	swiftShop,
 	anyCar,
 	mogoWebsite,
+	test,
 };
