@@ -1,7 +1,7 @@
 
 # 🚀 tommyphan.dev - Personal portfolio website
 
-#  https://tommyphan.dev/
+# Live Preview - https://tommyphan.dev
 
 ## This website is my portfolio created with great animations and transitions with options to change language or dark mode.
 
