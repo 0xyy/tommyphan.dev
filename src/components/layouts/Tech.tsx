@@ -12,12 +12,18 @@ import TechCard from "../ui/TechCard";
 
 const TechSection = () => {
 	const { t } = useTranslation("tech");
+	const content = (
+		<>
+			<p className={styles.sectionSubText}>{t("subtitle")}</p>
+			<h2 className={styles.sectionHeadText}>{t("title")}</h2>
+		</>
+	);
 	return (
 		<>
-			<motion.div variants={textVariant()}>
-				<p className={styles.sectionSubText}>{t("subtitle")}</p>
-				<h2 className={styles.sectionHeadText}>{t("title")}</h2>
+			<motion.div variants={textVariant()} className="hidden md:block">
+				{content}
 			</motion.div>
+			<div className="block md:hidden">{content}</div>
 
 			<div className="mt-20 flex flex-wrap gap-9">
 				{technologies.map((tech, index) => (
