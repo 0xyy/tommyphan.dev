@@ -137,7 +137,7 @@ const ContactSection = () => {
 						/>
 					</label>
 
-					{error && <p className="font-semibold text-red-600">{error}</p>}
+					{error && <p className="font-semibold text-red-600 dark:text-red-600">{error}</p>}
 
 					<button
 						type="submit"
