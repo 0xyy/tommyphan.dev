@@ -60,7 +60,7 @@ const Hero = () => {
 
 				<motion.div
 					variants={slideIn("right", "tween", 0.2, 1)}
-					className="relative h-[300px] w-full md:h-[350px] lg:h-auto lg:w-[390px] xl:w-[550px]"
+					className="relative h-[300px] w-full select-none md:h-[350px] lg:h-auto lg:w-[390px] xl:w-[550px]"
 				>
 					<div className="absolute left-1/2 top-5 flex items-start md:top-10 lg:right-0">
 						<img
