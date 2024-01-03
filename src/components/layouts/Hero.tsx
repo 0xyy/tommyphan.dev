@@ -41,7 +41,7 @@ const Hero = () => {
 					</motion.div>
 					<motion.p
 						variants={fadeIn("", "", 0.3, 1)}
-						className="text-md text-primary-t mt-10 max-w-2xl md:mt-20 md:text-xl lg:max-w-lg"
+						className="text-md mt-10 max-w-2xl text-primary-t md:mt-20 md:text-xl lg:max-w-lg"
 					>
 						<span className="leading-10">{t("intro")}</span>
 						<span className="leaading-10 text-blue-gradient font-bold">{t("much-more")}</span>
@@ -50,7 +50,7 @@ const Hero = () => {
 
 					<motion.p
 						variants={fadeIn("", "", 0.3, 1)}
-						className="text-primary-t mt-10 text-sm md:mt-20"
+						className="mt-10 text-sm text-primary-t md:mt-20"
 					>
 						<span className="flex items-center gap-2">
 							<Mouse className="text-primary-t" /> {t("scroll")}
@@ -68,7 +68,7 @@ const Hero = () => {
 							alt="Curved arrow"
 							className="-mt-[6px]"
 						/>
-						<p className="text-primary-t -ml-2 text-sm font-medium italic">{t("dog")}</p>
+						<p className="-ml-2 text-sm font-medium italic text-primary-t">{t("dog")}</p>
 					</div>
 					<div className="absolute bottom-0 h-2/3 w-full lg:h-4/5">
 						<ShibaCanvas />

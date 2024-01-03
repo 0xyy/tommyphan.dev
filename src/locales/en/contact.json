@@ -12,5 +12,6 @@
 	"submit": "Send",
 	"submitting": "Sending...",
 	"form-success": "Your message was sent!\n I will get back to you soon 😊",
-	"form-error": "Sorry, something went wrong.\n Try again later 😭"
+	"form-error": "Sorry, something went wrong.\n Try again later 😭",
+	"validation-error": "Please provide all data before sending."
 }

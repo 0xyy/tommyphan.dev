@@ -12,5 +12,6 @@
 	"submit": "Wyślij",
 	"submitting": "Wysyłanie...",
 	"form-success": "Twoja wiadomość została wysłana!\n Odezwę się wkrótce 😊",
-	"form-error": "Sorki coś poszło nie tak.\n Spróbuj ponownie poźniej 😭"
+	"form-error": "Sorki coś poszło nie tak.\n Spróbuj ponownie poźniej 😭",
+	"validation-error": "Przed wysłaniem należy podać wszystkie dane."
 }

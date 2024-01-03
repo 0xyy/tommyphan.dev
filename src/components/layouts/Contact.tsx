@@ -20,6 +20,7 @@ const ContactSection = () => {
 		message: "",
 	});
 	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState("");
 	const { isDarkMode } = useTheme();
 	const { t } = useTranslation("contact");
 
@@ -30,6 +31,13 @@ const ContactSection = () => {
 
 	const submitHandler = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+
+		if (!form.name || !form.email || !form.message) {
+			setError(t("validation-error"));
+			return;
+		}
+
+		setError("");
 		setLoading(true);
 
 		emailjs
@@ -67,13 +75,13 @@ const ContactSection = () => {
 		<div className="flex flex-col-reverse justify-between gap-10 overflow-hidden xl:mt-12 xl:flex-row">
 			<motion.div
 				variants={slideIn("left", "tween", 0.2, 1)}
-				className="bg-primary-b flex-[0.80] rounded-2xl p-8 shadow-xl"
+				className="flex-[0.80] rounded-2xl bg-primary-b p-8 shadow-xl"
 			>
 				<p className={styles.sectionSubText}>{t("subtitle")}</p>
 				<h3 className={styles.sectionHeadText}>{t("title")}</h3>
 
 				<div className="flex w-full">
-					<p className="text-secondary-t mt-3 max-w-3xl text-[17px] leading-[30px]">
+					<p className="mt-3 max-w-3xl text-[17px] leading-[30px] text-secondary-t">
 						{t("description")}
 						<a
 							href="mailto:tommyphan2004.tp@gmail.com"
@@ -96,44 +104,46 @@ const ContactSection = () => {
 
 				<form ref={formRef} onSubmit={submitHandler} className="mt-12 flex flex-col gap-8">
 					<label className="flex flex-col">
-						<span className="text-primary-t mb-4 font-medium">{t("name")}</span>
+						<span className="mb-4 font-medium text-primary-t">{t("name")}</span>
 						<input
 							type="text"
 							name="name"
 							value={form.name}
 							onChange={changeHandler}
 							placeholder={t("name-placeholder")}
-							className="text-primary-t placeholder:text-secondary-t bg-secondary-b rounded-lg border-none px-3 py-4 font-medium shadow-md outline-none md:px-6"
+							className="rounded-lg border-none bg-secondary-b px-3 py-4 font-medium text-primary-t shadow-md outline-none placeholder:text-secondary-t md:px-6"
 						/>
 					</label>
 					<label className="flex flex-col">
-						<span className="text-primary-t mb-4 font-medium">{t("email")}</span>
+						<span className="mb-4 font-medium text-primary-t">{t("email")}</span>
 						<input
 							type="email"
 							name="email"
 							value={form.email}
 							onChange={changeHandler}
 							placeholder={t("email-placeholder")}
-							className="text-primary-t placeholder:text-secondary-t bg-secondary-b rounded-lg border-none px-3 py-4 font-medium shadow-md outline-none md:px-6"
+							className="rounded-lg border-none bg-secondary-b px-3 py-4 font-medium text-primary-t shadow-md outline-none placeholder:text-secondary-t md:px-6"
 						/>
 					</label>
 					<label className="flex flex-col">
-						<span className="text-primary-t mb-4 font-medium">{t("message")}</span>
+						<span className="mb-4 font-medium text-primary-t">{t("message")}</span>
 						<textarea
 							rows={8}
 							name="message"
 							value={form.message}
 							onChange={changeHandler}
 							placeholder={t("message-placeholder")}
-							className="text-primary-t placeholder:text-secondary-t bg-secondary-b resize-none rounded-lg border-none px-3 py-4 font-medium shadow-md outline-none md:px-6"
+							className="resize-none rounded-lg border-none bg-secondary-b px-3 py-4 font-medium text-primary-t shadow-md outline-none placeholder:text-secondary-t md:px-6"
 						/>
 					</label>
+
+					{error && <p className="font-semibold text-red-600">{error}</p>}
 
 					<button
 						type="submit"
 						className={clsx(
 							isDarkMode ? "hover:bg-secondary-blue" : "hover:bg-primary-blue",
-							"text-tertiary-t w-fit rounded-xl bg-accent-blue px-8 py-3 font-bold shadow-xl outline-none transition-colors",
+							"w-fit rounded-xl bg-accent-blue px-8 py-3 font-bold text-tertiary-t shadow-xl outline-none transition-colors",
 						)}
 					>
 						{loading ? t("submitting") : t("submit")}
