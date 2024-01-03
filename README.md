@@ -4,7 +4,7 @@
 # Live Preview - https://tommyphan.dev
 
 ## This website is my portfolio created with great animations and transitions with options to change language or dark mode. 
-### It's a showcase of my skills along with the included information about me, my experience, etc.
+## It's a showcase of my skills along with the included information about me, my experience, etc.
 
 ## 🛠 Tech Stack
 
