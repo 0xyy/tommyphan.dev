@@ -13,6 +13,7 @@ import mogoWebsite from "./projects/mogo-website.png";
 import swiftShop from "./projects/swift-shop.png";
 import angular from "./tech/angular.png";
 import css from "./tech/css.png";
+import docker from "./tech/docker.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -74,6 +75,7 @@ export {
 	tailwind,
 	typescript,
 	github,
+	docker,
 	waveBottomProjectsLight,
 	waveBottomProjectsDark,
 	swiftShop,

@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 import { waveBottomProjectsDark, waveBottomProjectsLight } from "../../assets";
 import { projects } from "../../constants";
 import { useTheme } from "../../context/ThemeProvider";
-import { SectionWrapper } from "../../helpers";
 import { styles } from "../../styles";
 import { fadeIn, textVariant } from "../../utils/motion";
-import ProjectCard from "../ui/ProjectCard";
+import { ProjectCard } from "../common";
+import { SectionWrapper } from "../shared";
 
 const ProjectsSection = () => {
 	const { t } = useTranslation("projects");
@@ -23,7 +23,7 @@ const ProjectsSection = () => {
 			<div className="flex w-full">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
-					className="text-secondary-t mt-3 max-w-3xl text-[17px] leading-[30px]"
+					className="mt-3 max-w-3xl text-[17px] leading-[30px] text-secondary-t"
 				>
 					{t("description")}
 				</motion.p>

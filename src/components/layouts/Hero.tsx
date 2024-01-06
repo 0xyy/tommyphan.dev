@@ -8,7 +8,7 @@ import { blackCurveArrow, whiteCurveArrow } from "../../assets";
 import { useTheme } from "../../context/ThemeProvider";
 import { styles } from "../../styles";
 import { fadeIn, slideIn, staggerContainer, textVariant } from "../../utils/motion";
-import ShibaCanvas from "../canvas/Shiba";
+import { ShibaCanvas } from "../canvas";
 
 const Hero = () => {
 	const { t } = useTranslation("hero");

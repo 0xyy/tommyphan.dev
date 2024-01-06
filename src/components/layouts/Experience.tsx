@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
 import { experiences } from "../../constants";
-import { SectionWrapper } from "../../helpers";
 import { styles } from "../../styles";
 import { textVariant } from "../../utils/motion";
-import ExperienceCard from "../ui/ExperienceCard";
+import { ExperienceCard } from "../common";
+import { SectionWrapper } from "../shared";
 
 const ExperienceSection = () => {
 	const { t } = useTranslation("experience");

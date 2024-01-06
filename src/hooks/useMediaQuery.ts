@@ -17,7 +17,7 @@ export const useMediaQuery = (condition: string) => {
 		return () => {
 			mediaQuery.removeEventListener("change", handleMediaQueryChange);
 		};
-	}, []);
+	}, [condition]);
 
 	return isMobile;
 };

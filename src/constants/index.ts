@@ -1,7 +1,7 @@
 import {
-	angular,
 	anyCar,
 	css,
+	docker,
 	dpkSystemLogo,
 	git,
 	html,
@@ -126,10 +126,6 @@ export const technologies = [
 		icon: tailwind,
 	},
 	{
-		name: "Angular",
-		icon: angular,
-	},
-	{
 		name: "Node.js",
 		icon: nodejs,
 	},
@@ -144,6 +140,10 @@ export const technologies = [
 	{
 		name: "PostgreSQL",
 		icon: postgressql,
+	},
+	{
+		name: "Docker",
+		icon: docker,
 	},
 	{
 		name: "Git",

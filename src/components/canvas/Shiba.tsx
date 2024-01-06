@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 
 import { useMediaQuery } from "../../hooks/useMediaQuery";
-import CanvasLoader from "../ui/CanvasLoader";
+import { CanvasLoader } from "../common";
 
 const Shiba = ({ isMobile }: { isMobile: boolean }) => {
 	const shiba = useGLTF("./shiba/scene.gltf");

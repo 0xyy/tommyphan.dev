@@ -15,11 +15,11 @@ import {
 } from "../../assets";
 import { services } from "../../constants";
 import { useTheme } from "../../context/ThemeProvider";
-import { SectionWrapper } from "../../helpers";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { styles } from "../../styles";
 import { fadeIn, textVariant } from "../../utils/motion";
-import ServiceCard from "../ui/ServiceCard";
+import { ServiceCard } from "../common";
+import { SectionWrapper } from "../shared";
 
 const AboutSection = () => {
 	const { t } = useTranslation("about");
@@ -32,7 +32,7 @@ const AboutSection = () => {
 			</motion.div>
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className="text-secondary-t mt-4 max-w-3xl text-[17px] leading-[30px]"
+				className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary-t"
 			>
 				{t("description")}
 			</motion.p>

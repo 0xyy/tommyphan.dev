@@ -11,6 +11,7 @@ type TechCardProps = {
 	icon: string;
 	index: number;
 };
+
 const TechCard = ({ name, icon, index }: TechCardProps) => {
 	const cardStyle = "w-[160px] sm:w-[180px] md:w-[250px]";
 	const content = (
@@ -37,13 +38,13 @@ const TechCard = ({ name, icon, index }: TechCardProps) => {
 			>
 				<motion.div
 					variants={fadeIn("down", "spring", 0.1 * index, 0.75)}
-					className="bg-secondary-b w-full rounded-2xl p-1 shadow-md"
+					className="w-full rounded-2xl bg-secondary-b p-1 shadow-md"
 				>
 					{content}
 				</motion.div>
 			</Tilt>
 
-			<div className={clsx(cardStyle, "bg-secondary-b w-full rounded-2xl p-1 shadow-md md:hidden")}>
+			<div className={clsx(cardStyle, "w-full rounded-2xl bg-secondary-b p-1 shadow-md md:hidden")}>
 				{content}
 			</div>
 		</>

@@ -10,11 +10,11 @@ import {
 } from "../../assets";
 import { technologies } from "../../constants";
 import { useTheme } from "../../context/ThemeProvider";
-import { SectionWrapper } from "../../helpers";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { styles } from "../../styles";
 import { textVariant } from "../../utils/motion";
-import TechCard from "../ui/TechCard";
+import { TechCard } from "../common";
+import { SectionWrapper } from "../shared";
 
 const TechSection = () => {
 	const { t } = useTranslation("tech");
