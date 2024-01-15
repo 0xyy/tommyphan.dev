@@ -38,13 +38,13 @@ If you have any feedback, please reach out to me at tommyphan2004.tp@gmail.com o
 Clone the project
 
 ```bash
-  git clone https://github.com/0xyy/campaign-craft.git
+  git clone https://github.com/0xyy/tommyphan.dev.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd campaign-craft
+  cd tommyphan.dev
 ```
 
 Install dependencies
@@ -53,17 +53,10 @@ Install dependencies
   npm install
 ```
 
-Start the json-server locally
-
-```bash
-  npm run server
-```
-
-
 Start the server in development mode
 
 ```bash
-  npm run start:dev
+  npm run dev
 ```
 
 ## Authors
