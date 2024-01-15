@@ -41,13 +41,7 @@ Clone the project
   git clone https://github.com/0xyy/tommyphan.dev.git
 ```
 
-Go to the project directory
-
-```bash
-  cd tommyphan.dev
-```
-
-Install dependencies
+Go to the project directory and install dependencies
 
 ```bash
   npm install
