@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { Database, PanelsTopLeft, PencilLine, TabletSmartphone } from "lucide-react";
+import { Database, PanelsTopLeft, Smartphone, TabletSmartphone } from "lucide-react";
 import Tilt from "react-parallax-tilt";
 
 import { fadeIn } from "../../utils/motion";
@@ -9,7 +9,7 @@ const iconMap = {
 	web: PanelsTopLeft,
 	mobile: TabletSmartphone,
 	database: Database,
-	pencil: PencilLine,
+	smartphone: Smartphone,
 };
 
 type ServiceCardProps = {
@@ -17,6 +17,7 @@ type ServiceCardProps = {
 	title: string;
 	icon: keyof typeof iconMap;
 };
+
 const ServiceCard = ({ title, icon, index }: ServiceCardProps) => {
 	const Icon = iconMap[icon];
 
@@ -30,7 +31,7 @@ const ServiceCard = ({ title, icon, index }: ServiceCardProps) => {
 		>
 			<motion.div
 				variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-				className="bg-secondary-b w-full rounded-2xl p-1 shadow-md"
+				className="w-full rounded-2xl bg-secondary-b p-1 shadow-md"
 			>
 				<div className="flex min-h-[140px] flex-col items-center justify-evenly px-12 py-5 sm:min-h-[280px]">
 					<Icon className="h-[30px] w-[30px] text-primary-blue sm:h-[40px] sm:w-[40px]" />

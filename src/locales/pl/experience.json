@@ -23,11 +23,11 @@
 		"city": "Katowice",
 		"points": [
 			"Rozwijanie i utrzymywanie różnych komercyjnych projektów aplikacji internetowych.",
-			"Używając NestJS, Node.js all with TypeSscript."
+			"Używając NestJS, Node.js all with TypeScript."
 		]
 	},
 	"nebucode": {
-		"date": "Luty 2023 - Obecnie",
+		"date": "Luty 2023 - Styczeń 2024",
 		"city": "Warszawa",
 		"points": [
 			"Na początku moich obowiązków skupiałem się głównie na tworzeniu responsywnych interfejsów użytkownika w Angularze.",
@@ -37,5 +37,10 @@
 			"Samodzielne tworzenie aplikacji za pomocą React.js i NestJS w celu zautomatyzowania powolnego ręcznego procesu tworzenia danych, który wykorzystuje zewnętrzne api openai i livechat.",
 			"Tworzenie i monitorowanie aplikacji internetowych w React.js"
 		]
+	},
+	"fingoweb": {
+		"date": "Luty 2024 - Obecnie",
+		"city": "Kraków",
+		"points": ["Praca z React.js oraz GraphQL"]
 	}
 }

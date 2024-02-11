@@ -3,6 +3,7 @@ import {
 	css,
 	docker,
 	dpkSystemLogo,
+	fingowebLogo,
 	git,
 	html,
 	itFocusLogo,
@@ -38,12 +39,12 @@ export const services = [
 		icon: "mobile",
 	},
 	{
-		title: "Backend Developer",
-		icon: "database",
+		title: "React Native Developer",
+		icon: "smartphone",
 	},
 	{
-		title: "Content Creator",
-		icon: "pencil",
+		title: "Backend Developer",
+		icon: "database",
 	},
 ] as const;
 
@@ -73,12 +74,20 @@ export const experiences = [
 		points: "it-focus.points",
 	},
 	{
-		title: "Junior Full Stack Developer",
+		title: "Full Stack Developer",
 		companyName: "Nebucode",
 		icon: nebucodeLogo,
 		date: "nebucode.date",
 		city: "nebucode.city",
 		points: "nebucode.points",
+	},
+	{
+		title: "Frontend Developer",
+		companyName: "Fingoweb",
+		icon: fingowebLogo,
+		date: "fingoweb.date",
+		city: "fingoweb.city",
+		points: "fingoweb.points",
 	},
 ];
 

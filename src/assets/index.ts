@@ -2,6 +2,7 @@ import reactjs from "./tech/reactjs.png";
 import reactquery from "./tech/reactquery.png";
 
 import dpkSystemLogo from "./company/dpk-system_logo.jpeg";
+import fingowebLogo from "./company/fingoweb_logo.jpeg";
 import itFocusLogo from "./company/it-focus_logo.jpeg";
 import nebucodeLogo from "./company/nebucode_logo.jpeg";
 import promisLogo from "./company/promis_logo.jpeg";
@@ -56,6 +57,7 @@ export {
 	itFocusLogo,
 	dpkSystemLogo,
 	promisLogo,
+	fingowebLogo,
 	layeredWaveTopTechLight,
 	layeredWaveTopTechDark,
 	reactjs,
