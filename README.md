@@ -1,14 +1,57 @@
 
-# 🚀 tommyphan.dev - Personal portfolio website
 
-# Live Preview - https://tommyphan.dev
+![App Screenshot](https://i.imgur.com/r7O8qFd.png)
 
-## This website is my portfolio created with great animations and transitions with options to change language or dark mode. 
-## It's a showcase of my skills along with the included information about me, my experience, etc.
+![App Screenshot](https://i.imgur.com/UV0r1sv.png)
 
-## 🛠 Tech Stack
 
-**Client:** React.js, TypeScript, Tailwind CSS, Three.js
+
+# 👨‍💻 tommyphan.dev
+
+
+This website is my portfolio created with great animations and transitions with options to change language or dark mode.
+
+It's a showcase of my skills along with the included information about me, my experience, etc.
+
+
+## Demo
+
+https://tommyphan.dev
+
+
+## Tech Stack
+
+**Client:** React.js, TypeScript, Tailwind CSS
+
+**Animations and 3D models:** Three.js, Framer Motion, React Tilt
+
+## Lessons Learned
+
+While doing this project I learned a lot about using 3d models, great animations and transitions with popular libraries. I encountered problems with the 3d model and responsiveness to get the nice waves on the page to line up well but in the end I managed to do well. I also learned how to easily implement dark mode and internationalization. Overall I think this project is a good showcase of me.
+
+## Feedback
+
+If you have any feedback, please reach out to me at tommyphan2004.tp@gmail.com or [LinkedIn](https://www.linkedin.com/in/tommy04/)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/0xyy/tommyphan.dev.git
+```
+
+Go to the project directory and install dependencies
+
+```bash
+  npm install
+```
+
+Start the server in development mode
+
+```bash
+  npm run dev
+```
 
 ## Authors
 
