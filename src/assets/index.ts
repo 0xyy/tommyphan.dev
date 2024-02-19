@@ -1,6 +1,7 @@
 import reactjs from "./tech/reactjs.png";
 import reactquery from "./tech/reactquery.png";
 
+import { reviews } from "./../constants/index";
 import dpkSystemLogo from "./company/dpk-system_logo.jpeg";
 import fingowebLogo from "./company/fingoweb_logo.jpeg";
 import itFocusLogo from "./company/it-focus_logo.jpeg";
@@ -12,6 +13,8 @@ import github from "./github.png";
 import anyCar from "./projects/anycar.png";
 import mogoWebsite from "./projects/mogo-website.png";
 import swiftShop from "./projects/swift-shop.png";
+import reviewAvatarOne from "./reviews/review-avatar-one.jpeg";
+import reviewAvatarTwo from "./reviews/review-avatar-two.jpeg";
 import angular from "./tech/angular.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -27,6 +30,8 @@ import sass from "./tech/sass.png";
 import sequelize from "./tech/sequelize.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import blobBottomReviewsDark from "./waves/blob-bottom-reviews-dark.svg";
+import blobBottomReviewsLight from "./waves/blob-bottom-reviews-light.svg";
 import layeredWaveHeroLight from "./waves/layered-wave-hero-light.svg";
 import layeredWaveHeroDark from "./waves/layered-waves-hero-dark.svg";
 import layeredWaveTopTechDark from "./waves/layered-waves-top-tech-dark.svg";
@@ -45,6 +50,10 @@ import waveTopAboutSmallDark from "./waves/wave-top-about-small-dark.svg";
 import waveTopAboutSmallLight from "./waves/wave-top-about-small-light.svg";
 
 export {
+	blobBottomReviewsLight,
+	blobBottomReviewsDark,
+	reviewAvatarOne,
+	reviewAvatarTwo,
 	blackCurveArrow,
 	whiteCurveArrow,
 	layeredWaveHeroLight,

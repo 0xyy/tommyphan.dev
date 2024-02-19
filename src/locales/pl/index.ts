@@ -4,6 +4,7 @@ import experience from "./experience.json";
 import hero from "./hero.json";
 import navbar from "./navbar.json";
 import projects from "./projects.json";
+import reviews from "./reviews.json";
 import tech from "./tech.json";
 import theme from "./theme.json";
 
@@ -15,5 +16,6 @@ export const pl = {
 	tech,
 	projects,
 	contact,
+	reviews,
 	theme,
 };

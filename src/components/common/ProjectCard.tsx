@@ -26,7 +26,7 @@ const ProjectCard = ({
 				transitionSpeed={450}
 				tiltMaxAngleX={23}
 				tiltMaxAngleY={23}
-				className="bg-secondary-b w-full rounded-2xl p-5 sm:w-[360px]"
+				className="w-full rounded-2xl bg-secondary-b p-5 shadow-md sm:w-[360px]"
 			>
 				<div className="relative h-[230px] w-full">
 					<img src={image} alt={name} className="h-full w-full rounded-2xl object-cover" />
@@ -45,7 +45,7 @@ const ProjectCard = ({
 				</div>
 				<div className="mt-5">
 					<h3 className="text-full-blue-gradient text-[24px] font-bold">{name}</h3>
-					<p className="text-secondary-t mt-2 text-[14px]">{t(description)}</p>
+					<p className="mt-2 text-[14px] text-secondary-t">{t(description)}</p>
 				</div>
 
 				<div className="mt-4 flex flex-wrap gap-2">

@@ -1,7 +1,16 @@
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Hero, Navbar, Projects, Tech } from "./components/layouts";
+import {
+	About,
+	Contact,
+	Experience,
+	Hero,
+	Navbar,
+	Projects,
+	Reviews,
+	Tech,
+} from "./components/layouts";
 import { ThemeContextProvider } from "./context/ThemeProvider";
 
 const App = () => {
@@ -21,12 +30,13 @@ const App = () => {
 						},
 					}}
 				/>
-				<div className="bg-primary-b text-primary-t relative z-0">
+				<div className="relative z-0 bg-primary-b text-primary-t">
 					<Navbar />
 					<Hero />
 					<About />
 					<Experience />
 					<Tech />
+					<Reviews />
 					<Projects />
 					<Contact />
 				</div>
