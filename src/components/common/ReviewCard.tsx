@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { motion } from "framer-motion";
 
 import Tilt from "react-parallax-tilt";

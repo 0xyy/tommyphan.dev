@@ -1,7 +1,6 @@
 import reactjs from "./tech/reactjs.png";
 import reactquery from "./tech/reactquery.png";
 
-import { reviews } from "./../constants/index";
 import dpkSystemLogo from "./company/dpk-system_logo.jpeg";
 import fingowebLogo from "./company/fingoweb_logo.jpeg";
 import itFocusLogo from "./company/it-focus_logo.jpeg";
