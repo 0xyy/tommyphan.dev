@@ -242,15 +242,13 @@ export const reviews = [
 	{
 		name: "Jan Puto",
 		position: "Senior Gameplay Programmer at THE PARASIGHT",
-		review:
-			"Tommy jumped into frontend development role and quickly learned React fundamentals, which was amazing to see at the start of his career. He's really motivated and works hard to learn new things every day.",
+		review: "first-review",
 		avatar: reviewAvatarTwo,
 	},
 	{
 		name: "Sergiy Nimerovsky",
 		position: "Mid Node.js Backend Developer at Nebucode",
-		review:
-			"I had the pleasure of working with Tommy on three projects, and I truly appreciated his positive attitude towards gaining new experiences, solving unique problems, and his eagerness to become a better version of himself. I highly recommend Tommy for his dedication and professionalism, especially for Full Stack and Frontend positions.",
+		review: "second-review",
 		avatar: reviewAvatarOne,
 	},
 ];

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
 import Tilt from "react-parallax-tilt";
 
 import type { Review } from "../../constants";
@@ -11,6 +12,8 @@ type ReviewCardProps = {
 };
 
 const ReviewCard = ({ review: { name, position, review, avatar }, index }: ReviewCardProps) => {
+	const { t } = useTranslation("reviews");
+
 	return (
 		<motion.div variants={fadeIn("left", "spring", index * 0.5, 0.75)}>
 			<Tilt
@@ -28,7 +31,7 @@ const ReviewCard = ({ review: { name, position, review, avatar }, index }: Revie
 					</div>
 				</div>
 				<blockquote className="mt-5 text-justify text-[17px] italic leading-8">
-					"{review}"
+					"{t(review)}"
 				</blockquote>
 			</Tilt>
 		</motion.div>
