@@ -30,7 +30,7 @@ const App = () => {
 						},
 					}}
 				/>
-				<div className="relative z-0 bg-primary-b text-primary-t">
+				<div className="relative z-0 overflow-x-hidden bg-primary-b text-primary-t">
 					<Navbar />
 					<Hero />
 					<About />
