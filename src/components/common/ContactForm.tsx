@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { clsx } from "clsx";
 
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, ElementRef, FormEvent, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 
@@ -9,7 +9,7 @@ import { useTheme } from "../../context/ThemeProvider";
 
 const ContactForm = () => {
 	const { t } = useTranslation("contact");
-	const formRef = useRef<null | HTMLFormElement>(null);
+	const formRef = useRef<ElementRef<"form">>(null);
 	const [form, setForm] = useState({
 		name: "",
 		email: "",
@@ -28,7 +28,7 @@ const ContactForm = () => {
 		e.preventDefault();
 
 		if (!form.name || !form.email || !form.message) {
-			setError(t("validation-error"));
+			setError("validation-error");
 			return;
 		}
 
@@ -102,7 +102,7 @@ const ContactForm = () => {
 				/>
 			</label>
 
-			{error && <p className="font-semibold text-red-600 dark:text-red-600">{error}</p>}
+			{error && <p className="font-semibold text-red-600 dark:text-red-600">{t(error)}</p>}
 
 			<button
 				type="submit"
