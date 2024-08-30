@@ -41,6 +41,14 @@
 	"fingoweb": {
 		"date": "Luty 2024 - Obecnie",
 		"city": "Kraków",
-		"points": ["Praca z React.js oraz GraphQL"]
+		"points": [
+			"Tworzenie i utrzymywanie aplikacji webowych z wykorzystaniem React.js zintegrowanych z GraphQL i REST API.",
+			"Tworzenie perfekcyjnych wizualnie i responsywnych landing page przy użyciu Next.js z wykorzystaniem Static Site Generation (SSG).",
+			"Refaktoryzacja i poprawa jakości kodu w starszych projektach, z naciskiem na wydajność i skalowalność.",
+			"Debugowanie i rozwiązywanie problemów z wydajnością produkcji w dużych aplikacjach Next.js.",
+			"Tworzenie i utrzymywanie niestandardowych paczek npm do innych projektów.",
+			"Tworzenie aplikacji mobilnych w React Native, w tym funkcji czatu w czasie rzeczywistym.",
+			"Ukończenie zaawansowanego kursu TypeScript w celu pisania bardziej bezpiecznego i wysokiej jakości kodu."
+		]
 	}
 }

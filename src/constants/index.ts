@@ -1,7 +1,6 @@
 import {
 	anyCar,
 	css,
-	docker,
 	dpkSystemLogo,
 	fingowebLogo,
 	git,
@@ -13,18 +12,19 @@ import {
 	nestjs,
 	nextjs,
 	nodejs,
-	postgressql,
 	promisLogo,
+	reactNative,
 	reactjs,
-	reactquery,
 	redux,
 	reviewAvatarOne,
 	reviewAvatarTwo,
 	sass,
-	sequelize,
 	swiftShop,
 	tailwind,
+	tanstackQuery,
+	tanstackRouter,
 	typescript,
+	zustand,
 } from "../assets";
 
 export const navLinks = ["about", "experience", "contact"] as const;
@@ -84,7 +84,7 @@ export const experiences = [
 		points: "nebucode.points",
 	},
 	{
-		title: "Frontend Developer",
+		title: "Frontend Software Enginner",
 		companyName: "Fingoweb",
 		icon: fingowebLogo,
 		date: "fingoweb.date",
@@ -97,11 +97,11 @@ export type Experience = (typeof experiences)[number];
 
 export const technologies = [
 	{
-		name: "HTML 5",
+		name: "HTML",
 		icon: html,
 	},
 	{
-		name: "CSS 3",
+		name: "CSS",
 		icon: css,
 	},
 	{
@@ -117,16 +117,28 @@ export const technologies = [
 		icon: typescript,
 	},
 	{
-		name: "Next.js",
-		icon: nextjs,
-	},
-	{
 		name: "React.js",
 		icon: reactjs,
 	},
 	{
-		name: "React Query",
-		icon: reactquery,
+		name: "React Native",
+		icon: reactNative,
+	},
+	{
+		name: "Next.js",
+		icon: nextjs,
+	},
+	{
+		name: "Tanstack Query",
+		icon: tanstackQuery,
+	},
+	{
+		name: "Tanstack Router",
+		icon: tanstackRouter,
+	},
+	{
+		name: "Zustand",
+		icon: zustand,
 	},
 	{
 		name: "Redux Toolkit",
@@ -144,18 +156,18 @@ export const technologies = [
 		name: "NestJS",
 		icon: nestjs,
 	},
-	{
-		name: "Sequelize-Typescript",
-		icon: sequelize,
-	},
-	{
-		name: "PostgreSQL",
-		icon: postgressql,
-	},
-	{
-		name: "Docker",
-		icon: docker,
-	},
+	// {
+	// 	name: "Sequelize-Typescript",
+	// 	icon: sequelize,
+	// },
+	// {
+	// 	name: "PostgreSQL",
+	// 	icon: postgressql,
+	// },
+	// {
+	// 	name: "Docker",
+	// 	icon: docker,
+	// },
 	{
 		name: "Git",
 		icon: git,

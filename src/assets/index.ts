@@ -1,5 +1,5 @@
+import reactNative from "./tech/react_native.png";
 import reactjs from "./tech/reactjs.png";
-import reactquery from "./tech/reactquery.png";
 
 import dpkSystemLogo from "./company/dpk-system_logo.jpeg";
 import fingowebLogo from "./company/fingoweb_logo.jpeg";
@@ -28,7 +28,10 @@ import redux from "./tech/redux.png";
 import sass from "./tech/sass.png";
 import sequelize from "./tech/sequelize.png";
 import tailwind from "./tech/tailwind.png";
+import tanstackQuery from "./tech/tanstack_query.png";
+import tanstackRouter from "./tech/tanstack_router.png";
 import typescript from "./tech/typescript.png";
+import zustand from "./tech/zustand.png";
 import blobBottomReviewsDark from "./waves/blob-bottom-reviews-dark.svg";
 import blobBottomReviewsLight from "./waves/blob-bottom-reviews-light.svg";
 import layeredWaveHeroLight from "./waves/layered-wave-hero-light.svg";
@@ -69,7 +72,10 @@ export {
 	layeredWaveTopTechLight,
 	layeredWaveTopTechDark,
 	reactjs,
-	reactquery,
+	tanstackQuery,
+	tanstackRouter,
+	zustand,
+	reactNative,
 	angular,
 	css,
 	git,

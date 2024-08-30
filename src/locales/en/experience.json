@@ -41,6 +41,14 @@
 	"fingoweb": {
 		"date": "February 2024 - Present",
 		"city": "Cracow",
-		"points": ["Working with React.js and GraphQL"]
+		"points": [
+			"Developing and maintaining web applications using React.js integrated with GraphQL and REST APIs.",
+			"Creating pixel-perfect, responsive landing pages using Next.js with Static Site Generation (SSG).",
+			"Refactoring and improving the code quality of legacy projects, focusing on performance and scalability.",
+			"Debugging and resolving production performance issues in large-scale Next.js applications.",
+			"Creating and maintaining custom npm packages for other projects.",
+			"Developing mobile applications with React Native, including real-time chat features.",
+			"Completed an advanced TypeScript course for writing better safe code."
+		]
 	}
 }

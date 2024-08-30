@@ -7,7 +7,6 @@ import { CanvasLoader } from "../common";
 
 const Shiba = ({ isMobile }: { isMobile: boolean }) => {
 	const shiba = useGLTF("./shiba/scene.gltf");
-
 	return (
 		<mesh>
 			<hemisphereLight intensity={0.15} groundColor="black" />
@@ -22,8 +21,8 @@ const Shiba = ({ isMobile }: { isMobile: boolean }) => {
 			<pointLight intensity={1} />
 			<primitive
 				object={shiba.scene}
-				scale={isMobile ? 30 : 18}
-				position={[0, 15, 10]}
+				scale={isMobile ? 35 : 40}
+				position={[0, isMobile ? 12 : 10, 10]}
 				rotation={[0, 0, 0]}
 			/>
 		</mesh>
