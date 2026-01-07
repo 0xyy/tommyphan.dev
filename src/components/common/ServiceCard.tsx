@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
-import { Database, PanelsTopLeft, Smartphone, TabletSmartphone } from "lucide-react";
+import { Handshake, MonitorSmartphone, Rocket, TabletSmartphone } from "lucide-react";
 import Tilt from "react-parallax-tilt";
 
 import { fadeIn } from "../../utils/motion";
 
 const iconMap = {
-	web: PanelsTopLeft,
+	web: MonitorSmartphone,
 	mobile: TabletSmartphone,
-	database: Database,
-	smartphone: Smartphone,
+	rocket: Rocket,
+	handshake: Handshake,
 };
 
 type ServiceCardProps = {

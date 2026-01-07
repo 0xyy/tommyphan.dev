@@ -1,8 +1,7 @@
 {
-	"subtitle": "My work",
-	"title": "Projects.",
-	"description": "The goal of the following projects was to showcase my skills and experience when looking for my first job. Each example is briefly described, and with links to code repositories. These projects were created some time ago and I am in the process of creating something more advanced and refined. Stay tuned!",
-	"swift-shop-description": "Attractive E-commerce website designed for a pleasant shopping experience. The site features a clean and modern look, making it easy for users to browse and add products to their carts.",
-	"mogo-website-description": "Beautiful website created in pixel perfect with a preexisting design. The site is fully responsive, user friendly full of nice color gradients and clean transitions using only css.",
-	"anycar-description": "Dynamic app portal featuring a variety of car ads. Experience the convenience of adding new car ads. Effortlessly search for specific car ads and explore detailed information when viewing a single ad."
+	"subtitle": "My portfolio",
+	"title": "Featured Work.",
+	"description": "I believe in quality over quantity. Instead of listing every small experiment, I’ve highlighted a few polished projects built with my partner. Each one is a product built from scratch to solve real problems, engineered to deliver specific business value. I also learn new things while working on these projects.",
+	"devtimate-description": "A B2B SaaS platform streamlining the IT sales cycle. It leverages AI to transform raw requirements from clients into detailed estimates and proposals in minutes, helping agencies win more deals faster.",
+	"omoka-description": "A concept for an autonomous AI QA Agent designed to automate end-to-end testing. Currently in the market validation phase (waitlist) to assess demand and refine the product vision."
 }

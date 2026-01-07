@@ -29,7 +29,7 @@ const ProjectsSection = () => {
 				</motion.p>
 			</div>
 
-			<div className="mt-20 flex flex-wrap gap-7">
+			<div className="mt-20 grid grid-cols-1 gap-7 lg:grid-cols-2">
 				{projects.map((project, index) => (
 					<ProjectCard key={`project-${index}`} project={project} index={index} />
 				))}

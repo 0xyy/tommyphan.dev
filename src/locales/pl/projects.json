@@ -1,8 +1,7 @@
 {
-	"subtitle": "Moja praca",
-	"title": "Projekty.",
-	"description": "Celem poniższych projektów było zaprezentowanie moich umiejętności i doświadczenia podczas poszukiwania pierwszej pracy. Każdy przykład jest krótko opisany i zawiera linki do repozytoriów kodu. Projekty te powstały jakiś czas temu i jestem w trakcie tworzenia czegoś bardziej zaawansowanego i dopracowanego. Bądź na bieżąco!",
-	"swift-shop-description": "Atrakcyjna witryna e-commerce zaprojektowana z myślą o przyjemnych zakupach. Witryna charakteryzuje się czystym i nowoczesnym wyglądem, ułatwiając użytkownikom przeglądanie i dodawanie produktów do koszyka.",
-	"mogo-website-description": "Piękna strona internetowa stworzona w pixel perfect z istniejącego projektu. Witryna jest w pełni responsywna, przyjazna dla użytkownika, pełna ładnych gradientów kolorów i czystych przejść przy użyciu tylko css.",
-	"anycar-description": "Dynamiczny portal aplikacji z różnorodnymi ogłoszeniami samochodowym z wygodą dodawania nowych ogłoszeń motoryzacyjnych. Wyszukiwanie konkretnego ogłoszenia i przeglądanie szczegółowo pojedynczego ogłoszenia."
+	"subtitle": "Moje Portfolio",
+	"title": "Wyróżnione Realizacje.",
+	"description": "Staram się stawiać na jakość, nie na ilość. Wybrałem kilka dopracowanych projektów przez długi czas, które udało mi się zrealizować z moim wspólnikiem. To produkty rozwiązujące realne problemy, zaprojektowane tak, by dowozić konkretną wartość biznesową a przy okazji uczyć się nowych rzeczy.",
+	"devtimate-description": "Platforma B2B SaaS usprawniająca cykl sprzedaży w IT. Wykorzystuje AI, by w kilka minut przekształcić surowe wymagania klienta w szczegółowe wyceny i oferty, pomagając software house'om szybciej domykać sprzedaż.",
+	"omoka-description": "Koncepcja autonomicznego agenta AI do automatyzacji testów E2E. Projekt jest w fazie walidacji rynkowej (waitlist), co pozwala zweryfikować popyt i dopracować wizję produktu przed wdrożeniem."
 }

@@ -1,6 +1,7 @@
 import reactNative from "./tech/react_native.png";
 import reactjs from "./tech/reactjs.png";
 
+import devtimateLogo from "./company/devtimate_logo.jpeg";
 import dpkSystemLogo from "./company/dpk-system_logo.jpeg";
 import fingowebLogo from "./company/fingoweb_logo.jpeg";
 import itFocusLogo from "./company/it-focus_logo.jpeg";
@@ -10,8 +11,8 @@ import blackCurveArrow from "./curved-arrow-black.png";
 import whiteCurveArrow from "./curved-arrow-white.png";
 import github from "./github.png";
 import anyCar from "./projects/anycar.png";
-import mogoWebsite from "./projects/mogo-website.png";
-import swiftShop from "./projects/swift-shop.png";
+import devtimate from "./projects/devtimate.png";
+import omoka from "./projects/omoka.png";
 import reviewAvatarOne from "./reviews/review-avatar-one.jpeg";
 import reviewAvatarTwo from "./reviews/review-avatar-two.jpeg";
 import angular from "./tech/angular.png";
@@ -94,13 +95,14 @@ export {
 	docker,
 	waveBottomProjectsLight,
 	waveBottomProjectsDark,
-	swiftShop,
 	anyCar,
-	mogoWebsite,
 	stackedWavesBottomAboutSmallLight,
 	stackedWavesBottomAboutSmallDark,
 	waveTopAboutSmallLight,
 	waveTopAboutSmallDark,
 	layeredWaveTopTechSmallLight,
 	layeredWaveTopTechSmallDark,
+	devtimateLogo,
+	omoka,
+	devtimate,
 };

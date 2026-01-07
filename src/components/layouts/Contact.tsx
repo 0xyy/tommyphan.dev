@@ -1,56 +1,78 @@
-import { motion } from "framer-motion";
+import { clsx } from "clsx";
 
+import { Github, Linkedin, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import { styles } from "../../styles";
-import { slideIn } from "../../utils/motion";
-import { EarthCanvas } from "../canvas";
-import { ContactForm } from "../common";
 import { SectionWrapper } from "../shared";
+
+// Contact links data with Lucide icons
+const contactLinks = [
+	{
+		name: "Email",
+		href: "mailto:tommy.phan.dev@gmail.com",
+		value: "tommy.phan.dev@gmail.com",
+		icon: Mail,
+	},
+	{
+		name: "LinkedIn",
+		href: "https://www.linkedin.com/in/phan-tommy/",
+		value: "Tommy Phan",
+		icon: Linkedin,
+	},
+	{
+		name: "GitHub",
+		href: "https://github.com/0xyy",
+		value: "0xyy",
+		icon: Github,
+	},
+];
 
 const ContactSection = () => {
 	const { t } = useTranslation("contact");
 
 	return (
-		<div className="flex flex-col-reverse justify-between gap-10 overflow-hidden xl:mt-12 xl:flex-row">
-			<motion.div
-				variants={slideIn("left", "tween", 0.2, 1)}
-				className="flex-[0.80] rounded-2xl bg-primary-b p-8 shadow-xl"
-			>
-				<p className={styles.sectionSubText}>{t("subtitle")}</p>
-				<h3 className={styles.sectionHeadText}>{t("title")}</h3>
-
-				<div className="flex w-full">
-					<p className="mt-3 max-w-3xl text-[17px] leading-[30px] text-secondary-t">
-						{t("description")}
-						<a
-							href="mailto:tommyphan2004.tp@gmail.com"
-							target="_blank"
-							className="text-full-blue-gradient cursor-pointer font-semibold"
-						>
-							Email
-						</a>
-						,{" "}
-						<a
-							href="https://www.linkedin.com/in/tommy04/"
-							target="_blank"
-							className="text-full-blue-gradient cursor-pointer font-semibold"
-						>
-							LinkedIn
-						</a>{" "}
-						{t("form-info")}
-					</p>
+		<div className="flex flex-col justify-between gap-20 pb-20 md:flex-row md:items-center">
+			{/* Title and subtitle */}
+			<div>
+				<div>
+					<p className={clsx(styles.sectionSubText)}>{t("subtitle")}</p>
+					<h2 className={styles.sectionHeadText}>{t("title")}</h2>
 				</div>
 
-				<ContactForm />
-			</motion.div>
+				{/* Description */}
+				<p className="wrap-break-word mt-4 max-w-lg text-[17px] leading-[30px] text-secondary-t">
+					{t("description")}
+				</p>
+			</div>
+			{/* Contact links with icons */}
+			<div className="bg- flex flex-col gap-10">
+				{contactLinks.map((link) => {
+					const Icon = link.icon;
+					return (
+						<a
+							key={link.name}
+							href={link.href}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="group flex items-center gap-3 transition-all duration-300"
+						>
+							{/* Icon */}
+							<div className="bg-accent-blue/10 group-hover:bg-accent-blue/20 flex h-10 w-10 items-center justify-center rounded-lg transition-colors">
+								<Icon className="h-5 w-5 text-accent-blue" />
+							</div>
 
-			<motion.div
-				variants={slideIn("right", "tween", 0.2, 1)}
-				className="h-[200px] md:h-[300px] xl:h-auto xl:w-[550px]"
-			>
-				<EarthCanvas />
-			</motion.div>
+							{/* Text */}
+							<div className="flex flex-col">
+								<span className="text-sm font-medium text-secondary-t">{link.name}</span>
+								<span className="text-full-blue-gradient font-semibold group-hover:underline">
+									{link.value}
+								</span>
+							</div>
+						</a>
+					);
+				})}
+			</div>
 		</div>
 	);
 };

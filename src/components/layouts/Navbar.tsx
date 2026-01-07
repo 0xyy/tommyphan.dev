@@ -23,7 +23,7 @@ const Navbar = () => {
 
 	const languageButton = (
 		<button
-			className="text-md text-primary-t font-bold hover:text-accent-blue"
+			className="text-md font-bold text-primary-t hover:text-accent-blue"
 			onClick={changeLanguageHandler}
 		>
 			<span>{currentLanguage === "en" ? "PL" : "EN"}</span>
@@ -43,7 +43,7 @@ const Navbar = () => {
 	return (
 		<nav
 			className={clsx(
-				"border-secondary-b fixed z-20 flex w-full items-center border-b-2 bg-transparent py-5 backdrop-blur-lg backdrop-filter",
+				"fixed z-20 flex w-full items-center border-b-2 border-secondary-b bg-primary-b py-5",
 			)}
 		>
 			<div
@@ -104,7 +104,7 @@ const Navbar = () => {
 					<div
 						className={clsx(
 							!isOpen ? "hidden" : "flex",
-							"bg-secondary-b absolute top-20 z-10 mx-4 my-1 min-w-[140px] flex-col gap-3 rounded-xl p-6 shadow-lg",
+							"absolute top-20 z-10 mx-4 my-1 min-w-[140px] flex-col gap-3 rounded-xl bg-secondary-b p-6 shadow-lg",
 						)}
 					>
 						<ul className="flex list-none flex-col items-end justify-center gap-4">

@@ -1,17 +1,18 @@
 import {
-	anyCar,
 	css,
+	devtimate,
+	devtimateLogo,
 	dpkSystemLogo,
 	fingowebLogo,
 	git,
 	html,
 	itFocusLogo,
 	javascript,
-	mogoWebsite,
 	nebucodeLogo,
 	nestjs,
 	nextjs,
 	nodejs,
+	omoka,
 	promisLogo,
 	reactNative,
 	reactjs,
@@ -19,7 +20,6 @@ import {
 	reviewAvatarOne,
 	reviewAvatarTwo,
 	sass,
-	swiftShop,
 	tailwind,
 	tanstackQuery,
 	tanstackRouter,
@@ -33,20 +33,20 @@ export type NavLink = (typeof navLinks)[number] | "";
 
 export const services = [
 	{
-		title: "Web Developer",
+		title: "Web Development",
 		icon: "web",
 	},
 	{
-		title: "React/Next Developer",
+		title: "Mobile Development",
 		icon: "mobile",
 	},
 	{
-		title: "React Native Developer",
-		icon: "smartphone",
+		title: "MVP & SaaS Solutions",
+		icon: "rocket",
 	},
 	{
-		title: "Backend Developer",
-		icon: "database",
+		title: "Product & Strategy",
+		icon: "handshake",
 	},
 ] as const;
 
@@ -84,12 +84,20 @@ export const experiences = [
 		points: "nebucode.points",
 	},
 	{
-		title: "Frontend Software Enginner",
+		title: "Frontend Software Engineer",
 		companyName: "Fingoweb",
 		icon: fingowebLogo,
 		date: "fingoweb.date",
 		city: "fingoweb.city",
 		points: "fingoweb.points",
+	},
+	{
+		title: "Founder",
+		companyName: "devtimate",
+		icon: devtimateLogo,
+		date: "devtimate.date",
+		city: "devtimate.city",
+		points: "devtimate.points",
 	},
 ];
 
@@ -178,11 +186,11 @@ export type Technology = (typeof technologies)[number]["name"];
 
 export const projects = [
 	{
-		name: "Swift Shop",
-		description: "swift-shop-description",
+		name: "devtimate",
+		description: "devtimate-description",
 		tags: [
 			{
-				name: "nextjs",
+				name: "react",
 				color: "var(--primary-t)",
 			},
 			{
@@ -190,27 +198,27 @@ export const projects = [
 				color: "text-full-blue-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "nodejs",
 				color: "text-green-gradient",
 			},
 			{
-				name: "graphql",
+				name: "laravel",
 				color: "text-pink-gradient",
 			},
 		],
-		image: swiftShop,
-		sourceCodeLink: "https://github.com/0xyy/swift-shop",
+		image: devtimate,
+		sourceCodeLink: "https://devtimate.com/",
 	},
 	{
-		name: "Mogo Website",
-		description: "mogo-website-description",
+		name: "omoka",
+		description: "omoka-description",
 		tags: [
 			{
-				name: "html",
+				name: "astro",
 				color: "text-orange-gradient",
 			},
 			{
-				name: "css",
+				name: "typescript",
 				color: "text-full-blue-gradient",
 			},
 			{
@@ -218,34 +226,34 @@ export const projects = [
 				color: "text-pink-gradient",
 			},
 		],
-		image: mogoWebsite,
-		sourceCodeLink: "https://github.com/0xyy/mogo-website",
+		image: omoka,
+		sourceCodeLink: "https://omoka.dev/",
 	},
-	{
-		name: "Any Car",
-		description: "anycar-description",
-		tags: [
-			{
-				name: "reactjs",
-				color: "text-full-blue-gradient",
-			},
+	// {
+	// 	name: "Any Car",
+	// 	description: "anycar-description",
+	// 	tags: [
+	// 		{
+	// 			name: "reactjs",
+	// 			color: "text-full-blue-gradient",
+	// 		},
 
-			{
-				name: "typescript",
-				color: "text-full-blue-gradient",
-			},
-			{
-				name: "express",
-				color: "text-green-gradient",
-			},
-			{
-				name: "css",
-				color: "text-full-blue-gradient",
-			},
-		],
-		image: anyCar,
-		sourceCodeLink: "https://github.com/0xyy/AnyCarFront",
-	},
+	// 		{
+	// 			name: "typescript",
+	// 			color: "text-full-blue-gradient",
+	// 		},
+	// 		{
+	// 			name: "express",
+	// 			color: "text-green-gradient",
+	// 		},
+	// 		{
+	// 			name: "css",
+	// 			color: "text-full-blue-gradient",
+	// 		},
+	// 	],
+	// 	image: anyCar,
+	// 	sourceCodeLink: "https://github.com/0xyy/AnyCarFront",
+	// },
 ];
 
 export type Project = (typeof projects)[number];
@@ -253,13 +261,13 @@ export type Project = (typeof projects)[number];
 export const reviews = [
 	{
 		name: "Jan Puto",
-		position: "Senior Gameplay Programmer at THE PARASIGHT",
+		position: "Tech Programmer at Fool's Theory",
 		review: "first-review",
 		avatar: reviewAvatarTwo,
 	},
 	{
 		name: "Sergiy Nimerovsky",
-		position: "Mid Node.js Backend Developer at Nebucode",
+		position: "Software Engineer at Indeema",
 		review: "second-review",
 		avatar: reviewAvatarOne,
 	},
